@@ -6,7 +6,7 @@ import numpy as np
 import base64
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 CORS(app)
 
 # Cargar el modelo entrenado desde el archivo pickle
